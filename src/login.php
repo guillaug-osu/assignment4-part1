@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-   <title>Multtable</title>
+   <title>Login</title>
    <head>
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -30,6 +30,17 @@ If a user tries to access either content1.php or content2.php without going thro
 
 content1.php must have a link to content2.php that is displayed only after a user has logged in (this includes subsequent visits not from login.php). content2.php should have a link back to content1.php. Both content1.php and content2.php should require that a user at some point logged in to access them. Otherwise they should redirect back to login.php.
                </p>
+            </div>
+         </div>
+                  <div class="row">
+            <div class="col-md-3">
+               <form action="content1.php" method="POST">
+    <div class="form-group">
+    <label for="username">username</label>
+    <input type="text" class="form-control" name="username">
+  </div>
+  <button type="submit" class="btn btn-default">Submit</button>
+</form>
             </div>
          </div>
       </div>
