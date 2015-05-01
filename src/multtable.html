@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+   <title>Multtable</title>
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" type="text/css" href="../src/css/bootstrap.css">
+      <link rel="stylesheet" type="text/css" href="../src/css/dataTables.bootstrap.css">
+      <script type="text/javascript" charset="utf8" src="../src/scripts/jquery.js"></script>
+      <script type="text/javascript" charset="utf8" src="../src/scripts/bootstrap.js"></script>
+      <script type="text/javascript" charset="utf8" src="../src/scripts/jquery.dataTables.js"></script>
+      <script type="text/javascript" charset="utf8" src="../src/scripts/dataTables.bootstrap.js"></script>
+   </head>
+   <body>
+      <div class='container'>
+         <div class="row">
+            <div class="col-md-12">
+               <h1 class="page-header">multtable.html</h1>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-md-12">
+               <p class="lead">This file should accept 4 parameters passed via the URL in a GET request.
+                  min-multiplicand
+                  max-multiplicand
+                  min-multiplier
+                  max-multiplier
+                  All these number can come from the set of Whole numbers (numbers {0, 1, 2, 3, ...}).
+                  It should check than the min is in fact less than or equal to the max multiplicand and multiplier respectively. If it is not, it should print the message "Minimum [multiplicand|multiplier] larger than maximum.". It should also check that the values returned are integers for each parameter. If it is not it should print 1 message for each invalid input "[min-multiplicand...max-multiplier] must be an integer.". It should check that all 4 parameters exist for each missing parameter it should print "Missing parameter [min-multiplicand ... max-multiplier].".
+                  If all of the above conditions are met, it should produce a multiplication table that is (max-multiplicand - min-multiplicand + 2) tall and (max-multiplier - min-multiplier + 2) wide. The upper left cell should be empty. The left column should have integers running from min-multiplicand through max-multiplicand inclusive. The top row should have integers running from min-multiplier to max-multiplier inclusive. Every cell within the table should be the product of the corresponding multiplicand and multiplier.
+               </p>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-md-3">
+               <form action="multtable.php" method="GET">
+                    <div class="form-group">
+    <label for="min-multiplicand">Min-Multiplicand</label>
+    <input type="number" class="form-control" name="min-multiplicand" min="0">
+  </div>
+                      <div class="form-group">
+    <label for="max-multiplicand">Max-Multiplicand</label>
+    <input type="number" class="form-control" name="max-multiplicand" min="0">
+  </div>
+  <div class="form-group">
+    <label for="min-multiplier">Min-Multiplier</label>
+    <input type="number" class="form-control" name="min-multiplier" min="0">
+  </div>
+    <div class="form-group">
+    <label for="max-multiplier">Max-Multiplier</label>
+    <input type="number" class="form-control" name="max-multiplier" min="0">
+  </div>
+  <button type="submit" class="btn btn-default">Submit</button>
+</form>
+            </div>
+         </div>
+      </div>
+   </body>
+</html>
