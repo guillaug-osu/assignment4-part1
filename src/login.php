@@ -39,7 +39,7 @@ content1.php must have a link to content2.php that is displayed only after a use
     <label for="username">username</label>
     <input type="text" class="form-control" name="username">
   </div>
-  <button type="submit" class="btn btn-default">Submit</button>
+  <button type="submit" class="btn btn-default">Login</button>
 </form>
             </div>
          </div>
